@@ -1,0 +1,780 @@
+@font-face {
+    font-family: 'superstar_m54regular';
+    src: url('../fonts/superstar_m54-webfont.eot');
+    src: url('../fonts/superstar_m54-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/superstar_m54-webfont.woff') format('woff'),
+         url('../fonts/superstar_m54-webfont.ttf') format('truetype'),
+         url('../fonts/superstar_m54-webfont.svg#superstar_m54regular') format('svg');
+}
+
+@font-face {
+	font-family: 'MuseoSans-500';
+	src: url('../fonts/museo.eot');
+	src: url('../fonts/museo.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo.woff') format('woff'),
+		 url('../fonts/museo.ttf') format('truetype');
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: MuseoSans-500, sans-serif;
+	background-color: url('../images/darkCrossBackground.png');
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #006AE3;
+}
+
+a:hover {
+	color: #004696;
+}
+
+#logo {
+	font-size: 55px;
+	width: 140px;
+	float: left;
+	color: #E3E3E3;
+}
+
+#bodyContentWrap {
+	position: relative;
+	min-height: 100%;
+}
+
+#footerWrap {
+	height: 160px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #999999;
+}
+
+#footerWrap p
+{
+	text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 14px;
+}
+
+.mainContentDimension {
+	max-width: 66%;
+	min-width: 750px;
+	height: auto;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	clear: both;
+}
+
+.preFooterContent {
+	padding-bottom: 260px;  /* Needed for sticky footer */
+}
+
+.mainContentDimension.preFooterContent {
+	padding-bottom: 400px;  /* Needed for sticky footer */
+}
+
+.darkBackgroundPattern {
+	background-image: url('../images/darkCrossBackground.png');
+	color: #999999;
+}
+
+.grayBackgroundPattern {
+	background-image: url('../images/grayCrossBackground.png');
+	color: #E3E3E3;
+}
+
+.lightBackground {
+	background-color: #E3E3E3;
+	color: #1C1C1C;
+}
+
+.darkHighlightColor {
+background-color: #D8D8D8;
+	color: #1C1C1C;
+}
+
+.darkBackground {
+	background-color: #1C1C1C;
+	color: #E3E3E3;
+}
+
+.lightSeparatorBorder {
+	border-top: 1px outset #272727;
+}
+
+.chalkDashLine {
+	background-image: url('../images/chalkDash.png');
+	height: 6px;
+}
+
+.mainNav {
+	height: auto;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.mainNav .mainNavItem {
+	display: inline;
+	margin-right: 40px;
+}
+
+.mainNav .mainNavLink {
+	display: inline-block;
+	padding: 5px 5px;
+}
+
+.specialNavLink:hover {
+	background-image: url('../images/grayCrossBackground.png');
+}
+
+.fullWideContentWrapper {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.fullWideContentWrapper.paddedFullWideContentWrapper {
+	padding-top: 20px;
+}
+
+.autoCentered {
+	margin: 0 auto;
+}
+
+/* Horizontal Form Classes */
+.searchForm table  {
+	width: 100%;
+ }
+ 
+.searchForm label, .searchForm input, .searchForm select, .searchForm radio, .searchForm .ui-spinner {
+	float: left;
+	clear: left;
+ }
+ 
+ .searchForm .ui-spinner {
+	margin-right: 10px;
+ }
+ 
+ .searchForm .spinner {
+	float: left;
+ }
+/* End Horizontal Form Classes */
+ 
+/* Login Form Classes */
+.loginFormContainer {
+	width: 335px;
+	height: 335px;
+	position: relative;
+ }
+ 
+.userEntryForm  {
+	padding: 20px;
+	width: 100%;
+	overflow: hidden;
+ }
+ 
+.userEntryForm input, .userEntryForm select {
+	margin-bottom: 15px;
+ }
+ 
+.userEntryForm input[type='text'],
+	.userEntryForm input[type="password"] {
+	width: 100%;
+}
+
+.userEntryForm textarea {
+	max-width: 100%;
+	width: 100%;
+	height: 100px;
+	max-height: 100px;
+	margin-bottom: 15px;
+	font-family: MuseoSans-500, sans-serif;
+}
+
+.userEntryForm .bioInput {
+	max-width: 270px;
+}
+
+.userEntryForm label {
+	display: block;
+ }
+ 
+.labelButton {
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	cursor: pointer;
+ }
+ 
+.loginLabelButton {
+	width: 120px;
+	display: block;
+	line-height: 25px;
+ }
+
+.loginLabelButton[for="playerRadio"] {
+	float: left;
+}
+ 
+.loginLabelButton[for="managerRadio"] {
+	float: right;
+}
+ 
+.userEntryForm input[type="radio"]+label:hover {
+	background-color: #E8E8E8;
+}
+
+.userEntryForm input[type="radio"]:checked+label {
+	font-weight: bold;
+	background-color: #D8D8D8;
+}
+
+.loginRadioButton {
+	visibility: hidden;
+	display: inline-block;
+}
+
+.formError {
+	color: red;
+}
+ 
+.formMessage {
+	margin: 10px 0;
+	text-align: center;
+}
+ 
+.createAccountFormContainer {
+	height: auto;
+	width: 335px;
+}
+
+.createAccountErrors .formError, .recruitMessageBox .formError {
+	display:none;
+}
+
+.createAccountErrors .formError.error, .recruitMessageBox .formError.error {
+	display: block;
+}
+
+.recruitMessageBox {
+	position: absolute;
+	top: 0px;
+	left: 40%;
+	top: 20%;
+	width: 320px;
+	box-shadow: 5px 5px 7px 2px #000000;
+	display: none;
+}
+/* End Login Form Classes */
+ 
+/* Styled Form Classes */
+.styledForm input, .styledForm select, .styledForm label {
+	height: 25px;
+	font-family: MuseoSans-500, sans-serif;
+}
+
+.styledForm input[type="text"],
+	.styledForm input[type="password"] {
+	border: 2px solid white;
+}
+
+.styledForm input[type="text"]:hover,
+	.styledForm input[type="password"]:hover {
+	border: 2px solid #D8D8D8;
+}
+
+.styledForm select  {
+	border: 2px solid #FFFFFF;
+}
+ 
+.styledForm input[type='submit'] {
+	border: 1px solid #E3C500;
+	background-color: #E3C500;
+	cursor: pointer;
+ }
+ 
+.styledForm input[type='reset'] {
+	border: 1px solid #CCCCCC;
+	background-color: #E8E8E8;
+	cursor: pointer;
+ }
+ 
+.styledForm input[type='reset']:hover {
+	background-color: #D8D8D8;
+ }
+ 
+.styledForm input[type='submit']:hover  {
+	border: 1px solid #996900;
+	background-color: #E3C500;
+ }
+ 
+.styledForm input[type='submit']:active  {
+	border: 1px solid #996900;
+	background-color: #996900;
+ }
+ 
+.numberSelect {
+	width: 30px;
+ }
+ 
+.checkBox {
+	vertical-align: middle;
+ }
+/* End Styled Form Classes */
+
+/* Font Classes */
+.sportText {
+	font-family: superstar_m54regular, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+}
+
+.museoText {
+	font-family: MuseoSans-500, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+}
+
+.museoTextBold {
+	font-family: MuseoSans-500, sans-serif;
+	font-weight: bold;
+    font-style: bold;
+}
+
+.exclamationPoint {
+	font-size: 60px;
+}
+
+.tapuTextShadow {
+	text-shadow: 2px 2px #005F9D;
+}
+/* End Font Classes */
+
+/* Giant Bracket Classes */
+.giantBracket {
+	background-repeat: none;
+	width: 28px;
+	height: 290px;
+}
+
+.giantBracketComponent {
+	height: auto;
+	padding-top: 5%;
+}
+
+.leftGiantBracket {
+	background-image: url('../images/leftGiantBracket.png');
+	float:left;
+}
+
+.rightGiantBracket {
+	background-image: url('../images/rightGiantBracket.png');
+	float: right;
+}
+
+.giantBracketContent {
+	padding-top: 5%;
+	font-size: 72px;
+	text-align: center;
+	height: auto;
+	margin-bottom: 80px;
+}
+
+.giantBracketContent .exclamationPoint {
+	font-size: 77px;
+}
+/* End Giant Bracket Classes */
+
+/* Button Classes */
+.button {
+	display: block;
+	text-align: center;
+	box-shadow: 2px 2px 5px 0px #000000;
+	padding: 10px 0;
+}
+
+.roundedCorners {
+	border-radius: 2px;
+}
+
+.yellowButton {
+	border: solid 2px #996900;
+	color: #1C1C1C;
+	background-image: url('../images/buttonBackground.png');
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	background-position: center;
+	font-size: 25px;
+}
+
+.yellowButton:hover {
+	background-color: #E3C500;
+	background-image: none;
+	color: #1C1C1C;
+}
+
+.yellowButton:active {
+	background-image: url('../images/buttonBackgroundHover.png');
+}
+
+.yellowButtonGlowEffect:hover {
+	box-shadow: 0px 0px 25px 0px #E3C500;
+}
+
+.bigYellowButtonContainer {
+	width: 250px;
+}
+
+.createAccountButtonsBox {
+	width: 600px;
+	margin-top: 10%;
+}
+.createAccountButton {
+	margin-bottom: 20px;
+	width: 100%;
+}
+/* End Button Classes */
+
+/* Pipe Separated Set - Right to Left/Left to Right Classes */
+.pipeSeparatedSetRTL {
+	float: right;
+}
+
+.pipeSeparatedSetRTL .pipeSeparatedSetItem {
+	float: right;
+}
+
+.pipeSeparatedSetLTR {
+	float: left;
+}
+
+.pipeSeparatedSetLTR .pipeSeparatedSetItem {
+	float: left;
+}
+
+.pipeSeparatedSetLTR .pipeSeparatedSetItem:not(:last-child):after,
+	.pipeSeparatedSetRTL .pipeSeparatedSetItem:not(:first-child):after {
+	color: #E3E3E3;
+	content:"\00a0\00a0|\00a0\00a0";
+}
+/* End Pipe Separated Link Set - Left to Right Classes */
+
+/* Search Results Table Classes */
+.profilesNotFound {
+	display: block;
+	width: 200px;
+}
+
+.profilesTable {
+	width: 100%;
+}
+
+.profilesTable th, tr, td {
+	text-align: left;
+	vertical-align: middle;
+	padding: 10px 5px;
+}
+
+.profilesTable th {
+	font-weight: bold;
+	font-size: 14px;
+	background-image: url('../images/grayCrossBackground.png');
+}
+
+.profilesTable tr {
+	border-top: 1px solid #222222;
+}
+
+.profilesSearchPhoto {
+	width: 20%;
+}
+
+.profilesSearchLookingStatus {
+	width: 5%;
+}
+
+.profilesFirstColWidthVer {
+	width: 1px;
+}
+
+.profilesSportsCol1 {
+	width: 15px;
+}
+
+.profilesSportsCol2 {
+	width: 150px;
+}
+
+.editAccountLink {
+	float: right;
+}
+/* Send Search Result Table Classes */
+
+/* Profile Classes */
+.playerData {
+	font-size: 12px;
+	float: left;
+}
+
+.playerData th {
+	font-size: 12px;
+}
+
+.profilePicSmall {
+	width: 100px;
+}
+
+.profilePicLarge {
+	width: 140px;
+}
+
+.profilePicture {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+.profileBox {
+	overflow: hidden;
+	padding: 5px;
+}
+
+.bioProfileBox {
+	float: left;
+	width: 30%;
+}
+
+.bio {
+	padding: 10px 0;
+	clear: left;
+}
+
+.profileHeader {
+	margin-bottom: 10px;
+}
+
+.editProfile {
+	float: left;
+}
+
+.editProfilePositions {
+	float: right;
+}
+
+.editAccountContainer {
+	width: 90%;
+}
+
+.sportPositionsBox {
+	display: block;
+	width: 100%;
+}
+
+.sportList {
+	width: 100%;
+}
+
+.icon {
+	width: 10px;
+}
+
+.iconLarge {
+	width: 35px;
+}
+
+.teamListProfileBox {
+	float: right;
+	width: 30%;
+}
+
+.message {
+	border-bottom: 1px solid white;
+	padding: 5px;
+}
+
+.message.messagePending {
+	background-color: #D8D8D8;
+}
+
+.message.messageResult {
+	background-color: #FFBF3C;
+}
+
+.messageText {
+	font-size: 12px;
+}
+
+.message .messageText {
+	padding: 2px;
+}
+.message .iconLarge {
+	margin-right: 5px;
+	float: left;
+}
+
+.messageList .message {
+	width: 100%;
+	height: 45px;
+	display: block;
+}
+
+.messageBox {
+	background-color: #E3E3E3;
+	border-radius: 2px;
+	color: #1C1C1C;
+	overflow: hidden;
+}
+
+.messageBoxContainer {
+	width: 310px;
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.messageBox.open {
+	min-height: 100px;
+	height: 35%;
+}
+
+.messageList {
+	background-color: white;
+}
+
+.messageBox .messageList {
+	display: none;
+	width: 100%;
+	height: 89%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.messageBox.open .messageList {
+	display: block;
+}
+
+.messageBox .messageBoxHeading {
+	text-align: center;
+	padding: 8px 0px;
+	border-bottom: 2px groove white;
+	cursor: pointer;
+	border-top: 2px solid #996900;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.messageBox .messageCommands, .recruitMessageBox .messageCommands {
+	float: right;
+	height: 80%;
+	width: 20px;
+	position: relative;
+	margin-right: 15px;
+	margin-left: 5px;
+}
+
+.messageCommand {
+	border: 1px solid white;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.messageCommand.messageCommandAccept {
+	background-color: #167F39;
+	border: 1px solid #167F39;
+}
+
+.messageCommand.messageCommandAccept:hover {
+	border: 1px solid #11602B;
+}
+
+.messageCommand.messageCommandDecline {
+	background-color: #790000;
+	border: 1px solid #790000;
+}
+
+.messageCommand.messageCommandDecline:hover {
+	border: 1px solid #550000;
+}
+
+.messageCommand.messageCommandAcknowledge:hover {
+	border: 1px solid #996900;
+}
+
+.messageCommand.messageCommandCancelRequest:hover {
+	background-color: orange;
+}
+
+.messageCommand .messageCommandIcon {
+	text-align: center;
+	line-height: 20px;
+	color: white;
+	font-size: 12px;
+}
+
+.messageCommands .messageCommand {
+	float: left;
+	clear: left;
+	height: 50%;
+	width: 90%;
+	margin-bottom: 2px;
+}
+
+.teamManagerCommand {
+	cursor: pointer;
+	border: 1px solid #E3C500;
+	background-color: #E3C500;
+	border-radius: 2px;
+}
+
+.teamManagerCommand:hover {
+	border: 1px solid #996900;
+}
+
+.teamManagerCommandBox {
+	height: auto;
+	width: 60px;
+	overflow: hidden;
+	position: relative;
+	padding-right: 2px;
+}
+
+.teamManagerCommandBox .teamManagerCommand {
+	width: 100%;
+	height: 30px;
+	display: block;
+}
+
+.teamManagerCommand.teamManagerCommandText, .teamManagerCommand .teamManagerCommandText  {
+	text-align: center;
+	line-height: 30px;
+	color: #1C1C1C;
+	font-size: 12px;
+}
+/* End Profile Classes */
